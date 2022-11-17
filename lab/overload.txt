@@ -1,0 +1,41 @@
+class areas{
+
+     void area(float a){
+            double sq = a*a;
+            System.out.println("Area of square is" +sq+ "sq units" );            
+     }
+
+     void area(int l, int b){
+             int rect = l*b;
+             System.out.println("Area of rectangle is" +rect+ "sq units");
+     }
+    
+     void area(float b, float h){
+             double trian = 0.5*b*h;
+             System.out.println("Area of triangle is" +trian+ "sq units");
+     }
+  
+     void area(double d1, double d2){
+             double rhombus= 0.5*d1*d2;
+             System.out.println("Area of rhombus is" +rhombus+ "sq units");
+     }
+
+     void area(float b, double h){
+             double parallel = b*h;
+             System.out.println("Area of parallelogram is" +parallel+ "sq units");
+     }        
+     
+}
+
+class overload{
+   public static void main(String args[])
+   {
+       areas obj = new areas();
+       obj.area(5.5f);
+       obj.area(76, 32);
+       obj.area(3.4f, 7.3f);
+       obj.area(7.34, 8.98);
+       obj.area(1.2f, 4.5);
+   }
+}
+ 
